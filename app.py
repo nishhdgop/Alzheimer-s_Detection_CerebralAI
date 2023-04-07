@@ -3,6 +3,7 @@ import numpy as np
 import cv2
 from flask import Flask, render_template, request
 import tensorflow as tf
+import reportMail
 
 new_model = tf.keras.models.load_model('trained_model.hdf5')
 app = Flask(__name__)
@@ -26,15 +27,17 @@ def hello_world():
 @app.route('/', methods=['POST'])
 def predict():
     name = request.form['name']
+    age = request.form['age1']
     emailId = request.form['emailId']
     contact = request.form['contact']
-    print(name, emailId, contact)
-
+    symptoms=request.form['symptoms']
     imagefile = request.files['imagefile']
     image_path = "images/"+imagefile.filename
     imagefile.save(image_path)
     predicted_value = predict_new(image_path)
-    return render_template('index.html', name=name, emailId=emailId, contact=contact, predicted_value=predicted_value)
+    print(name,age, emailId,contact,symptoms,predicted_value)
+    reportMail.send(name,age,emailId,contact,symptoms,predicted_value)
+    return render_template('index.html', name=name, emailId=emailId, predicted_value=predicted_value)
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
