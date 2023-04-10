@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap"
@@ -13,62 +15,355 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Alziheimer's Detection</title>
-</head>
+    <STYLE>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .i {
+            border-radius: 1em;
+        }
+
+        .class1 {
+            min-height: 100vh;
+            width: 100%;
+            background-color: #1b1b1e;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+        }
+
+        nav {
+            display: flex;
+            padding: 0.1% 4%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+            margin-right: 1em;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 2em 3em;
+            position: relative;
+        }
+
+        .nav-links ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background: #d3e023;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+        .text-box {
+            margin-left: -25%;
+            width: 100%;
+            color: white;
+            position: absolute;
+            top: 35%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .subHeading {
+            padding: 2em 2em;
+            border-radius: 2em;
+            margin-top: -1rem;
+            line-height: 40px;
+            font-size: 22px;
+            color: grey;
+            font-weight: 300;
+        }
+
+
+        .box1 img {
+            margin-left: 55%;
+            margin-top: 0rem;
+        }
+
+        .heading {
+            font-size: 38px;
+            color: white;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 2px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: rgb(119, 115, 115);
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .about {
+            margin-left: -25rem;
+            margin-right: 10rem;
+        }
+
+        .about1 {
+            color: rgb(119, 115, 115);
+
+        }
+
+        .about1_heading {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 28px;
+            color: white;
+            font-weight: 300;
+        }
+
+        .about1_content {
+            margin-top: -10px;
+            margin-left: 30px;
+            width: 700px;
+            line-height: 0.8cm;
+            text-align: center;
+            font-size: 16px;
+            color: rgb(119, 115, 115);
+            font-weight: 300;
+
+        }
+
+        .app__doctor_img img {
+            width: 380px;
+            height: 550px;
+            margin-top: 4rem;
+            border-radius: 15px;
+            margin-right: -20rem;
+            margin-left: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .video {
+            border-radius: 8rem;
+        }
+
+        .predict_heading {
+            font-size: 38px;
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .predict_tagline {
+            font-size: 18px;
+            color: rgb(119, 115, 115);
+            text-align: center;
+            margin-top: -2rem;
+        }
+
+        .registerForm {
+            width: 380px;
+            background-color: rgba(43, 42, 42, 0.5);
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+            box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            padding: 1rem 1rem;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .predict_label {
+            font-size: 16px;
+            color: rgb(119, 115, 115);
+            margin: 1rem 1rem 1rem 1rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+
+        }
+
+        .form-label {
+            font-size: 16px;
+            color: rgb(119, 115, 115);
+            margin: 1rem 1rem 1rem 1rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+
+        .predict_input {
+            align-items: center;
+
+            margin-top: 5px;
+            padding: .5rem .5rem;
+            font-size: 16px;
+            margin-left: 2rem;
+            margin-right: 3rem;
+            margin-top: -0.5rem;
+            width: 280px;
+            border-radius: 5rem;
+        }
+
+        .predict_input_symp {
+            margin-top: 5px;
+            padding: .5rem .5rem;
+            font-size: 16px;
+            margin-left: 2rem;
+            margin-right: 3rem;
+            margin-top: -0.5rem;
+            width: 280px;
+            border-radius: 1rem;
+            height: 60px;
+        }
+
+        .Predictbutton {
+            margin-top: .1rem;
+            width: 80px;
+            margin-left: 120px;
+            padding: 10px 10px;
+            font-size: 18px;
+            color: rgb(119, 115, 115);
+            margin-bottom: 1rem;
+        }
+
+        .predict_btn {
+            font-weight: 300;
+            font-size: 18px;
+            margin-top: 0em;
+            padding: 10px 10px;
+            border-radius: .8em;
+            cursor: pointer;
+            background-color: rgb(190, 83, 83);
+        }
+
+
+        .app__footer {
+            background-color: #373439;
+        }
+
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            color: white;
+            font-weight: 300;
+        }
+
+        .footer h4,
+        p {
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            font-weight: 600;
+            color: rgb(82, 81, 81);
+        }
+
+        .icons .fa {
+            margin-top: -10em;
+            color: rgb(46, 41, 41);
+            margin: 0 10px;
+            cursor: pointer;
+            padding: 10px 0;
+            font-size: 1.5em;
+        }
+    </STYLE>
+    <script>(function(w, d) { w.CollectId = "643409222f45336a32164f5a"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+    </head>
 
 <body>
     <div class="class1">
         <section class="header">
             <nav>
-                <a href=""><img src="{{url_for('static',filename='images/logoo.png')}}" width="70px" height="40px"></a>
-                <!-- <p class="tagline">Your personal Eyecare buddy</p> -->
+                <a href=""><img src="{{url_for('static',filename='images/logogfgnew.png')}}" width="300px"
+                        height="130px" style="margin-top:0rem; margin-left:-1rem"></a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">PREDICT</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#predict">PREDICT</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="box1">
                 <div class="text-box">
-                    <h1>ALZIHIEMER AND ANXIETY DETECTION</h1>
-                    <p class="subHeading">Welcome to our Alzihiermer detection website. <br>we provide cognitive
-                        assessments and early detection
-                        <br>and management of Alzhiermer's Disease. Our website <br>includes risk factors and life style
-                        changes to<br>style changes to reduce the risk and connecting<br> to medical professionals
+                    <h1 style="font-weight:300">Your Personal Brain Health Buddy</h1>
+                    <p class="subHeading">With modern technology and deep<br>
+                        learning model, we provide patients with a <br> quick and
+                        accurate diagnosis of their current <br> stage of Alzheimer's disease
+                        by analyzing <br> their brain scans.
                     </p>
                     </p>
                 </div>
-                <img src="{{url_for('static',filename='images/brain.png')}}" class="neurons" width="580px"
-                    height="480px"></img>
+                <img src="{{url_for('static',filename='images/brain.png')}}" class="neurons" width="550px"
+                    height="450px"></img>
             </div>
         </section><br><br><br><br><br><br>
-        <div class='app__about' id='About'>
+        <div class='app__about' id='about'>
             <p class='heading'>About Us</p>
-            <p class='tagline'>Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Optio, dolorem.</p>
+            <p class='tagline'>
+                Remembering tomorrow by predicting today: Your trusted source for Alzheimer's risk assessment</p>
             <div class='content'>
                 <div class='about'>
                     <div class='about1'>
-                        <p class='about1_heading'>Alzihmer's</p>
-                        <p class='about1_content'>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Magni commodi, totam ut ullam doloribus
-                            numquam!dolor sit amet consectetur</p>
+                        <p class='about1_heading'>Alzheimer's</p>
+                        <p class='about1_content'>Alzheimer's is a neurodegenerative disease that causes
+                            dementia, due to the destruction of the brain cells. Diabetic patients are more susceptible
+                            to this disease, and this poses a
+                            huge problem, as India is unfortunately the diabetic capital of the world with over 70
+                            million suffering from it.
+                        </p>
                     </div>
                     <div class='about1'>
-                        <p class='about1_heading'>What we do</p>
-                        <p class='about1_content'>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Magni commodi, totam ut ullam doloribus
-                            numquam!</p>
+                        <p class='about1_heading'>How We Help</p>
+                        <p class='about1_content'>We provide an interactive and lucid interface for patients, so that
+                            anyone can have access to a quick and
+                            free diagnosis of Alzheimer's. Patient requires to upload their brain scans to predict the
+                            stage of dementia and receive a detailed report that gives teh diagnosis, via mail.
+                            The report is also stored in our google cloud for reference and documentation.
+                        </p>
                     </div>
                     <div class='about1'>
-                        <p class='about1_heading'>Treatment and cure</p>
-                        <p class='about1_content'>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Magni commodi, totam ut ullam doloribus
-                            numquam!Magni commodi</p>
+                        <p class='about1_heading'>Our Vision</p>
+                        <p class='about1_content'>We hope for an Alzheimer's-free India and all other forms of dementia.
+                            We want our elders and families to lead
+                            fulfilling lives, free from the burden of memory-related problems. We strongly suggest and
+                            recommend and early diagnosis of this disease,
+                            to help achieve our goal.</p>
                     </div>
                 </div>
                 <div class="app__doctor_img">
@@ -80,7 +375,7 @@
             <br><br>
             <p class="heading">SERVICES</p>
             <p class="tagline">24x7 Assistance</p>
-            <center><video loop autoplay muted width="700" height="500">
+            <center><video class="video" loop autoplay muted width="700" height="500">
                     <source src="{{ url_for('static', filename='images/brain.mp4') }}" type="video/mp4">
                 </video>
             </center>
@@ -88,61 +383,63 @@
             <br><br><br><br><br>
         </div>
 
-        <div class="app__predict" id="Predict">
+        <div class="app__predict" id="predict">
             <div class="predict_form">
                 <div class="predict_heading">
-                    <p>Enter User's Details</p>
+                    <p style="color:white; font-weight:300">Enter User's Details</p>
                 </div>
                 <div class="predict_tagline">
-                    <p>A Quick Test is just a click away. Click Here!</p>
+                    <p style=" font-weight:300">A Quick Test is just a click away. Click Here!</p>
                 </div>
                 <div class="predict_form">
-                    <form class="registerForm" action="/" method="post" enctype="multipart/form-data">
+                    <center>
+                        <form class="registerForm" action="/" method="post" enctype="multipart/form-data">
 
-                        <label class="predict_label">Patient Name</label>
-                        <input class="predict_input" name="name" type="text" placeholder="Enter Patient's name" />
-                        <label class="predict_label">Email Id</label>
-                        <input class="predict_input" name="emailId" type="text" placeholder="Enter Email Id" />
-                        <label class="predict_label">Contact</label>
-                        <input class="predict_input" name="contact" type="text" placeholder="Enter Contact" />
-                        <label class="predict_label">Age</label>
-                        <input class="predict_input" name="age1" type="text" placeholder="Enter age here" />
-                        <label class="predict_label">Enter any specific symptoms</label>
-                        <textarea name="symptoms" class="predict_input_symp" type="text" placeholder="Enter symptoms" id=""
-                            cols="30" rows="10"></textarea>
-                        <label class="form-label" for="form3Examplec">
-                            Upload brain scan
-                        </label>
-                        <input type="file" class="predict_input" class="form-control" id="customFile"
-                            name="imagefile"></input>
-                        <button type="Predict Image" class="predict_btn" onclick="fn1()">Predict </button>
-                        <div class="col-sm-12" align="center">
-                            {% if predicted_value %}
-                            <p>
-                                <br>
-                                <br>
-                                Prediction: {{ predicted_value }}
-                                <br>
-                            </p>
-                            {% endif %}
-                        </div>
-                    </form>
+                            <label class="predict_label">Patient Name</label>
+                            <input class="predict_input" name="name" type="text" placeholder="Enter Patient's name" />
+                            <label class="predict_label">Email Id</label>
+                            <input class="predict_input" name="emailId" type="text" placeholder="Enter Email Id" />
+                            <label class="predict_label">Contact No</label>
+                            <input class="predict_input" name="contact" type="text" placeholder="Enter contact no" />
+                            <label class="predict_label">Age</label>
+                            <input class="predict_input" type="number" name="age1" placeholder="Enter age here" />
+                            <label class="predict_label">Enter any specific symptoms</label>
+                            <textarea name="symptoms" class="predict_input_symp" type="text" placeholder="Enter symptoms" id=""
+                                cols="20" rows="5"></textarea>
+                            <label class="form-label" for="form3Examplec">
+                                Upload brain scan
+                            </label>
+                            <input type="file" class="predict_input" class="form-control" id="customFile"
+                                name="imagefile"></input>
+                            <button type="Predict Image" class="predict_btn" onclick="fn1()">Predict </button>
+                            <div class="col-sm-12" align="center">
+                                {% if predicted_value %}
+                                <p>
+                                    <br>
+                                    <br>
+                                    Prediction: {{ predicted_value }}
+                                    <br>
+                                </p>
+                                {% endif %}
+                            </div>
+                        </form>
+                    </center>
                 </div>
             </div>
             <br />
             <br />
             <br />
         </div>
-        <div class="app__footer">
+        <div class="app__footer" id="contact">
             <section class="footer">
                 <h4>About us</h4>
-                <p>Brain-Doc Your personal healtcare buddy</p>
+                <p>Cerebral AI - Your personal healtcare buddy</p>
                 <div class="icons">
                     <i class="fa fa-twitter"></i>
                     <i class="fa fa-facebook"></i>
                     <i class="fa fa-linkedin"></i>
                     <i class="fa fa-instagram"></i>
-                    <p>By Brain-Doc</p>
+                    <p>By Cerebral AI</p>
                 </div>
             </section>
         </div>
