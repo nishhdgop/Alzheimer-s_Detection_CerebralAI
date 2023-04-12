@@ -81,6 +81,10 @@
             width: 100%;
         }
 
+        .hamburger {
+            display: none;
+        }
+
         .text-box {
             margin-left: -25%;
             width: 100%;
@@ -98,12 +102,17 @@
 
         .subHeading {
             padding: 2em 2em;
-            border-radius: 2em;
+            text-align: center;
             margin-top: -1rem;
-            line-height: 40px;
+            /* line-height: 40px; */
             font-size: 22px;
             color: grey;
             font-weight: 300;
+        }
+
+        .neurons {
+            width: 550px;
+            height: 450px;
         }
 
 
@@ -175,7 +184,18 @@
         }
 
         .video {
+            width: 620px;
+            height: 440px;
+            /* margin-left: 28%; */
             border-radius: 8rem;
+        }
+
+        .tagline_video {
+            font-size: 18px;
+            color: rgb(119, 115, 115);
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .predict_heading {
@@ -202,6 +222,8 @@
             box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
             border-radius: 30px;
             padding: 1rem 1rem;
+            /* margin-left: 37rem;
+            margin-right: 40rem; */
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
@@ -300,16 +322,249 @@
             padding: 10px 0;
             font-size: 1.5em;
         }
-    </STYLE>
-    <script>(function(w, d) { w.CollectId = "643409222f45336a32164f5a"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-    </head>
 
-<body>
-    <div class="class1">
+        /* @media screen and (max-width: 2000px){
+    app__navbar-logo img{
+        width:210px;
+    }
+} */
+        @media screen and (max-width: 1150px) {
+            .class1 img {
+                width: 200px;
+                height: 100px;
+            }
+
+            .nav-links ul li {
+                padding: 7px 10px;
+                position: relative;
+            }
+
+            .text-box {
+                text-align: center;
+                width: 100%;
+                margin-left: 0px;
+                margin-top: -100px;
+                text-align: center;
+                font-size: 24px;
+
+            }
+
+            .subHeading {
+                margin-top: 50px;
+                width: 60%;
+                margin-top: 0px;
+                padding: 2em 2em;
+                line-height: 30px;
+                font-size: 16px;
+                color: grey;
+                margin-left: -10px;
+                font-weight: 300;
+            }
+
+            .neurons {
+                width: 300px;
+                height: 300px;
+            }
+
+            .box1 img {
+                margin-left: 520px;
+                margin-top: 100px;
+                margin-bottom: -230px;
+            }
+
+            .heading {
+                margin-top: 200px;
+            }
+
+            .about1_heading {
+                width: 100%;
+                margin-left: 350px;
+                font-size: 24px;
+            }
+
+            .about1_content {
+                margin: 2px 2px;
+                padding: 2px 5px;
+                width: 100%;
+                margin-left: 350px;
+                font-size: 15px;
+            }
+
+            .app__doctor_img {
+                width: 100%;
+            }
+
+            .app__doctor_img img {
+                width: 380px;
+                height: 550px;
+                margin-top: 600px;
+                margin-left: -380px;
+                margin-bottom: -180px;
+            }
+
+            .registerForm {
+                margin-top: 0px;
+                margin-left: 200px;
+            }
+        }
+
+
+        @media screen and (max-width: 950px) {
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+
+            .hamburger .line {
+                width: 30px;
+                height: 3px;
+                background: rgb(219, 10, 10);
+                margin: 6px 0;
+            }
+
+            .nav-links {
+                display: none;
+                height: 450px;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                width: 100vw;
+                /* background: #11101b; */
+                transition: 0.2s;
+                overflow: hidden;
+            }
+
+            .nav-links .active {
+                height: 450px;
+            }
+
+            .nav-links ul {
+                display: block;
+                width: fit-content;
+                margin: 80px auto 0 auto;
+                text-align: center;
+                transition: 0.5s;
+                opacity: 0;
+            }
+
+            .nav-links .active {
+                opacity: 1;
+            }
+
+            .text-box h1 {
+                width: 100%;
+                margin-left: 0px;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 25px;
+
+            }
+
+            .subHeading {
+                padding: 2em 2em;
+                width: 100%;
+                margin-top: -1rem;
+                line-height: 30px;
+                font-size: 16px;
+                color: grey;
+                margin-left: -30px;
+                font-weight: 300;
+            }
+
+            /* .neurons {
+                width: 250px;
+                height: 250px;
+            } */
+
+            .box1 img {
+                margin-left: 80px;
+                margin-top: 340px;
+                margin-bottom: -390px;
+            }
+
+            .heading {
+                margin-top: 300px;
+            }
+
+            .about1_heading {
+                justify-content: center;
+                text-align: center;
+                /* margin-left: 230px; */
+                font-size: 24px;
+            }
+
+            .about1_content {
+                justify-content: center;
+                position: relative;
+                left: 100px;
+                width: 60%;
+                font-size: 15px;
+            }
+
+            .app__about {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .app__doctor_img img {
+                width: 100%;
+                width: 250px;
+                height: 380px;
+                margin-top: 855px;
+                margin-left: -250px;
+                margin-bottom: -290px;
+                border-radius: 15px;
+            }
+
+            .video {
+                width: 350px;
+                height: 200px;
+                border-radius: 5px;
+                margin-bottom: -100px;
+            }
+
+            .predict_heading p {
+                font-size: 25px;
+            }
+
+            .predict_tagline {
+                font-size: 16px;
+            }
+
+            .heading {
+                font-size: 32px;
+            }
+
+            .registerForm {
+                margin-top: 0px;
+                margin-left: -10px;
+            }
+
+            .tagline_video {
+                margin-top: 120px;
+                font-size: 16px;
+                color: rgb(119, 115, 115);
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: -30px;
+            }
+        }
+    </STYLE>
+</head>
+
+<body class="class1">
+    <div>
         <section class="header">
             <nav>
                 <a href=""><img src="{{url_for('static',filename='images/logogfgnew.png')}}" width="300px"
                         height="130px" style="margin-top:0rem; margin-left:-1rem"></a>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
                 <div class="nav-links">
                     <ul>
                         <li><a href="#">HOME</a></li>
@@ -329,8 +584,7 @@
                     </p>
                     </p>
                 </div>
-                <img src="{{url_for('static',filename='images/brain.png')}}" class="neurons" width="550px"
-                    height="450px"></img>
+                <img src="{{url_for('static',filename='images/brain.png')}}" class="neurons"></img>
             </div>
         </section><br><br><br><br><br><br>
         <div class='app__about' id='about'>
@@ -375,11 +629,12 @@
             <br><br>
             <p class="heading">SERVICES</p>
             <p class="tagline">24x7 Assistance</p>
-            <center><video class="video" loop autoplay muted width="700" height="500">
+            <center>
+                <video class="video" loop autoplay muted width="700" height="500">
                     <source src="{{ url_for('static', filename='images/brain.mp4') }}" type="video/mp4">
                 </video>
             </center>
-            <p class="tagline">We feel happy to help you just enter details and predict</p>
+            <p class="tagline_video">We feel happy to help you just enter details and predict</p>
             <br><br><br><br><br>
         </div>
 
@@ -402,9 +657,9 @@
                             <label class="predict_label">Contact No</label>
                             <input class="predict_input" name="contact" type="text" placeholder="Enter contact no" />
                             <label class="predict_label">Age</label>
-                            <input class="predict_input" type="number" name="age1" placeholder="Enter age here" />
+                            <input class="predict_input" type="number" placeholder="Enter age here" />
                             <label class="predict_label">Enter any specific symptoms</label>
-                            <textarea name="symptoms" class="predict_input_symp" type="text" placeholder="Enter symptoms" id=""
+                            <textarea name="" class="predict_input_symp" type="text" placeholder="Enter symptoms" id=""
                                 cols="20" rows="5"></textarea>
                             <label class="form-label" for="form3Examplec">
                                 Upload brain scan
@@ -433,19 +688,24 @@
         <div class="app__footer" id="contact">
             <section class="footer">
                 <h4>About us</h4>
-                <p>Cerebral AI - Your personal healtcare buddy</p>
+                <p>CerebralAI Your personal healtcare buddy</p>
                 <div class="icons">
                     <i class="fa fa-twitter"></i>
                     <i class="fa fa-facebook"></i>
                     <i class="fa fa-linkedin"></i>
                     <i class="fa fa-instagram"></i>
-                    <p>By Cerebral AI</p>
+                    <p>By Cerebral-AI</p>
                 </div>
             </section>
         </div>
-
-
     </div>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-links");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
