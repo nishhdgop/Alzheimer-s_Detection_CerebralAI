@@ -1,9 +1,13 @@
 {
   "type": "service_account",
   "project_id": "fluent-flame-382905",
+  //can not be public
   "private_key_id": "---PrivateKeyID---",
+   //can not be public
   "private_key": "----PrivateKey----",
+   //can not be public
   "client_email": "---ClientEmail---",
+   //can not be public
   "client_id": "---ClientID----",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
