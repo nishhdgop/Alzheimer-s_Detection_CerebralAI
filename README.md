@@ -10,7 +10,7 @@ Also, since India is unfortunately the diabetic capital of the world, more than 
 
 The detection of this disease can be done through analyzing of MRI or CT scans by radiologists and neurologists, or through comprehensive neurological exams by an experienced neuropsychologist, that are designed to make cognitive and functional assessments of the brain. 
 
-However, majority of Indians, especially those residing in rural areas have no access to centres of neurological excellence in the country. This, coupled with the dearth of neuroscience specialists and an increase in our aging population, poses a major problem in the country.
+However, majority of Indians, especially those residing in rural areas have no access to centres of neurological excellence in the country. This, coupled with the lack of neuroscience specialists and an increase in our aging population, poses a major problem in the country.
 
 ## Our Solution :
 
@@ -55,7 +55,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 Output 1: CerebralAI web app user interface
 
-![Screenshot (289)](https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png)
+<img width="800" https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png>
 
 Output 2: User interface 2
 
