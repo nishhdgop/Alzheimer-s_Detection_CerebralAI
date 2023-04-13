@@ -55,7 +55,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 Output 1: CerebralAI web app user interface
 
-<img width="800" https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png>
+<img width="800" src="https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png">
 
 Output 2: User interface 2
 
