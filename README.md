@@ -57,7 +57,7 @@ Output 1: CerebralAI web app user interface
 
 ![Screenshot (289)](https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png)
 
-Output 2: User interfsce 2
+Output 2: User interface 2
 
 ![Screenshot (291)](https://user-images.githubusercontent.com/116015331/231774601-5fbfaa04-9f47-4ccd-9b69-ee7d229fbd28.png)
 
