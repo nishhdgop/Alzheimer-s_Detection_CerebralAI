@@ -1,10 +1,10 @@
 {
   "type": "service_account",
   "project_id": "fluent-flame-382905",
-  "private_key_id": "2daf379462192d932419b33ee963ac92320da495",
+  "private_key_id": "---PrivateKeyID---",
   "private_key": "----PrivateKey----",
-  "client_email": "43081864406-compute@developer.gserviceaccount.com",
-  "client_id": "103879705975663169179",
+  "client_email": "---ClientEmail---",
+  "client_id": "---ClientID----",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
