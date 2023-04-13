@@ -20,9 +20,17 @@ Our aim is to reduce the mortality rate among the elderly due to Alzheimer's dis
 
 ## Features of CerebralAI :
 
-Our web-application has an interface that is user-friendly and can be used by anyone - be it patients, their family members or medical professionals. The patient can upload their MRI scan, along with their details like name, age, gender, email, symptoms etc. On the basis of their uploaded MRI scan, our trained deep learning model conducts an analysis and detects the stage of Alzheimer's disease that the patient has with 93% accuracy. We have four stages of classification : Non Demented, Very Mild Demented, Mild Demented and Moderate Demented. A report is generated and the same is sent to the email ID provided by the patient. 
+Our web-application has an interface that is user-friendly and can be used by anyone - be it patients, their family members or medical professionals. The patient can upload their MRI scan into our model through the interface along with their details like name, age, gender, email, symptoms etc. On the basis of their uploaded MRI scan, our trained deep learning model conducts an analysis and detects the stage of Alzheimer's disease that the patient has with 93% accuracy. We have four stages of classification : Non Demented, Very Mild Demented, Mild Demented and Moderate Demented. A report is generated and the same is sent to the email ID provided by the patient. 
 
 It is also uploaded in our Google Cloud, which can be used by the patient for future reference. For any other queries and FAQs that might occur to the user, we also have a chatbot that caters to their needs.
+
+## Our Features :
+
+   - Detection of 4 stages of Alzheimer's disease.
+   - Interactive UI-based web-app
+   - A chatbot on our web-app for service assistance and FAQs.
+   - Generated DR report is sent to patient’s email.
+   - This report is also backed up on our Google Cloud Platform for documentation and future reference pueposes.
 
 ## Technologies We Have Used : 
 
@@ -30,6 +38,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 - HTML
 - CSS 
+- Flask
 
 ### Backend :
 
@@ -41,3 +50,29 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 - Deep Learning
 - VGG19
 - CNN
+
+## Output Screenshots :
+
+Output 1: CerebralAI web app user interface
+
+![Screenshot (289)](https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png)
+
+Output 2: User interfsce 2
+
+![Screenshot (291)](https://user-images.githubusercontent.com/116015331/231774601-5fbfaa04-9f47-4ccd-9b69-ee7d229fbd28.png)
+
+Output 3: ChatBot implementation in the web app.
+
+![Screenshot (290)](https://user-images.githubusercontent.com/116015331/231775150-33588359-6d45-4069-a0fd-fca2899bc1ba.png)
+
+Output 4: Alzheimer's disease prediction by uploading the MRI scan image
+
+![Screenshot (293)](https://user-images.githubusercontent.com/116015331/231774892-869dd9e9-38ad-4561-aa63-55aba7bfe5f4.png)
+
+Output 5:  The email is generateed once the prediction happens from the image uploaded by the user. The email consists of an attachment of the medical report generated.
+
+![Screenshot (295)](https://user-images.githubusercontent.com/116015331/231775415-7aa85284-f43c-47f5-b2de-0469f87d56b5.png)
+
+Output 6: The generated report after prediction is also stored in the Google Cloud Platform for future refernces and documentation purposes. 
+
+![Screenshot (297)](https://user-images.githubusercontent.com/116015331/231775845-f5f4fe05-a262-46a1-b17e-cfb2cc0a6322.png)
