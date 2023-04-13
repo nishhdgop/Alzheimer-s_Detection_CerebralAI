@@ -125,7 +125,7 @@ def send(name, age, emailId, contact, symptoms, predicted_value):
 
         # SMTP server login
         username = "1NH20CS124@gmail.com"
-        password = "****************"
+        password = "****************"#cannot be public
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         server.login(username, password)
