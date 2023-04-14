@@ -29,7 +29,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
    - Detection of 4 stages of Alzheimer's disease.
    - Interactive UI-based web-app
    - A chatbot on our web-app for service assistance and FAQs.
-   - Generated DR report is sent to patient’s email.
+   - Generated Alzheimer's disease report is sent to patient’s email.
    - This report is also backed up on our Google Cloud Platform for documentation and future reference pueposes.
 
 ## Technologies used for development : 
