@@ -78,7 +78,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
    <img width="800" src="https://user-images.githubusercontent.com/116015331/231775415-7aa85284-f43c-47f5-b2de-0469f87d56b5.png">
 
-7. Gogole Cloud Storage- The generated report after prediction is also stored in the Google Cloud Platform for future refernces and documentation purposes. 
+7. Google Cloud Storage- The generated report after prediction is also stored in the Google Cloud Platform for future refernces and documentation purposes. 
 
    <img width="800" src="https://user-images.githubusercontent.com/116015331/231775845-f5f4fe05-a262-46a1-b17e-cfb2cc0a6322.png">
    
