@@ -83,4 +83,6 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
    <img width="800" src="https://user-images.githubusercontent.com/116015331/231775845-f5f4fe05-a262-46a1-b17e-cfb2cc0a6322.png">
    
 ## Our unique value proposition :
+This is **CerebralAI**.
+We provide an interactive user-friendly interface for patients to  use, so that anyone can have access to a quick and free diagnosis of Alzheimer's disease. By **SOLVING FOR INDIA** our vision is to help every Indian at the risk of or suffering from dementia and enable them to lead quality life.
 
