@@ -18,7 +18,7 @@ Our interactive web-application : CerebralAI, seeks to solve this issue. Cerebra
 
 Our aim is to reduce the mortality rate among the elderly due to Alzheimer's disease, by providing an efficient and speedy diagnosis of the disorder, and help better the quality of life of every patient suffering from dementia.
 
-## Features of CerebralAI :
+## Aspects of CerebralAI :
 
 Our web-application has an interface that is user-friendly and can be used by anyone - be it patients, their family members or medical professionals. The patient can upload their MRI scan into our model through the interface along with their details like name, age, gender, email, symptoms etc. On the basis of their uploaded MRI scan, our trained deep learning model conducts an analysis and detects the stage of Alzheimer's disease that the patient has with 93% accuracy. We have four stages of classification : Non Demented, Very Mild Demented, Mild Demented and Moderate Demented. A report is generated and the same is sent to the email ID provided by the patient. 
 
@@ -32,47 +32,54 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
    - Generated DR report is sent to patient’s email.
    - This report is also backed up on our Google Cloud Platform for documentation and future reference pueposes.
 
-## Technologies We Have Used : 
+## Technologies used for development : 
 
 ### Frontend :
 
-- HTML
-- CSS 
-- Flask
+- **HTML and CSS**:- Used to create a visually appealing webpage and add styling, layout and control the look and feel of the website. 
+
+- **Flask**:- It is a lightweight, open source web application framework for Python that we have used to deploy the deep learning model to the website.
 
 ### Backend :
 
-- Google Cloud
-- AMD instances
-- Google's TensorFlow
-- KerasAPI
-- OpenCV
-- Deep Learning
-- VGG19
-- CNN
+- **Google Cloud**:- We have made use of the Google Cloud's flexible data storage system in order to store the generated diagnosis reports as it offers safe and secure storage systems with easy file retrieval mechanism.
 
-## Output Screenshots :
+- **AMD instances**:- Our project CerebralAI has been deployed on the AMD Virtual Machine instance combining the powerful capabilities of AMD virtual machine running on the Google Cloud Platform.
+ 
+- **Google's TensorFlow**:- We have used tensorflow API to train our model to predict the current stage of Alzheimer's disease based on the brain scan image uploaded by the user.
 
-Output 1: CerebralAI web app user interface
+- **KerasAPI**:- Keras is a high level neural network library. We have used it to train our deep learning model using the VGG19 Algorithm.
 
-<img width="800" src="https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png">
+- **VGG19**:- VGG19 is a deep convolutional neural network model used for image classification tasks. It consists of 19 layers, including 16 convolutional layers, 3 fully connected layers, and a final softmax classifier layer. Our project uses over 6000 brain scan images to train the model.
 
-Output 2: User interface 2
+## Project Implementation :
 
-![Screenshot (291)](https://user-images.githubusercontent.com/116015331/231774601-5fbfaa04-9f47-4ccd-9b69-ee7d229fbd28.png)
+1. AMD instances and Google Cloud:- The project is deployed on the amd virtual machine instance running on the google cloud platform and is run through the command line.
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231960522-98a8e786-608b-4b11-8133-60ca3c2acd80.png">
 
-Output 3: ChatBot implementation in the web app.
+2. Homepage of CerebralAI- This page displays the CerebralAI web app user interface
 
-![Screenshot (290)](https://user-images.githubusercontent.com/116015331/231775150-33588359-6d45-4069-a0fd-fca2899bc1ba.png)
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231774032-e74d2d07-41e5-4237-9bba-6b062100ec19.png">
 
-Output 4: Alzheimer's disease prediction by uploading the MRI scan image
+3. User Interface 2- This page displays the About Us content of the web app.
 
-![Screenshot (293)](https://user-images.githubusercontent.com/116015331/231774892-869dd9e9-38ad-4561-aa63-55aba7bfe5f4.png)
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231774601-5fbfaa04-9f47-4ccd-9b69-ee7d229fbd28.png">
 
-Output 5:  The email is generateed once the prediction happens from the image uploaded by the user. The email consists of an attachment of the medical report generated.
+4. Chatbot- It shows the chatbot implementation in the web app.
 
-![Screenshot (295)](https://user-images.githubusercontent.com/116015331/231775415-7aa85284-f43c-47f5-b2de-0469f87d56b5.png)
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231775150-33588359-6d45-4069-a0fd-fca2899bc1ba.png">
 
-Output 6: The generated report after prediction is also stored in the Google Cloud Platform for future refernces and documentation purposes. 
+5. Alzheimer's disease prediction- The brain scan image is uploaded to predict the current stage of Alzheimer's disease.
 
-![Screenshot (297)](https://user-images.githubusercontent.com/116015331/231775845-f5f4fe05-a262-46a1-b17e-cfb2cc0a6322.png)
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231774892-869dd9e9-38ad-4561-aa63-55aba7bfe5f4.png">
+
+6. Email Generation-  The email is generateed once the prediction happens from the image uploaded by the user. The email consists of an attachment of the medical report generated.
+
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231775415-7aa85284-f43c-47f5-b2de-0469f87d56b5.png">
+
+7. Gogole Cloud Storage- The generated report after prediction is also stored in the Google Cloud Platform for future refernces and documentation purposes. 
+
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/231775845-f5f4fe05-a262-46a1-b17e-cfb2cc0a6322.png">
+   
+## Our unique value proposition :
+
