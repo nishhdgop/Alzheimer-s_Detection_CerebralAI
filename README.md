@@ -55,7 +55,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 ## Project Implementation :
 
 1. AMD instances and Google Cloud:- The project is deployed on the amd virtual machine instance running on the google cloud platform and is run through the command line.
-2. 
+ 
    <img width="800" src="https://user-images.githubusercontent.com/116015331/231960522-98a8e786-608b-4b11-8133-60ca3c2acd80.png">
 
 2. Homepage of CerebralAI- This page displays the CerebralAI web app user interface
