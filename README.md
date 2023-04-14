@@ -30,7 +30,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
    - Interactive UI-based web-app
    - A chatbot on our web-app for service assistance and FAQs.
    - Generated Alzheimer's disease report is sent to patient’s email.
-   - This report is also backed up on our Google Cloud Platform for documentation and future reference pueposes.
+   - This report is also backed up on our Google Cloud Platform for documentation and future reference purposes.
 
 ## Technologies used for development : 
 
