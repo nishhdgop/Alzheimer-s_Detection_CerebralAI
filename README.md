@@ -48,7 +48,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 - **AMD instances**:- Our project CerebralAI has been deployed on the AMD Virtual Machine instance combining the powerful capabilities of AMD virtual machine running on the Google Cloud Platform.
  
-- **Google's TensorFlow**:- We have used tensorflow API to train our model to predict the current stage of Alzheimer's disease based on the brain scan image uploaded by the user.
+- **Google's TensorFlow**:- We have used tensorflow API to train our model which predicts the current stage of Alzheimer's disease based on the brain scan image uploaded by the user.
 
 - **KerasAPI**:- Keras is a high level neural network library. We have used it to train our deep learning model using the VGG19 Algorithm.
 
