@@ -1,4 +1,4 @@
-# CerebralAI : Alzheimer's Detection
+# CerebralAI : Alzheimer's Disease Detection
 
 ## Introduction :
 
@@ -54,6 +54,8 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 ## Project Implementation :
 
+Here's our [project demonstration](https://www.youtube.com/watch?v=nuORLKIt8Ls&t=1s) on youtube
+
 1. AMD instances and Google Cloud:- The project is deployed on the amd virtual machine instance running on the google cloud platform and is run through the command line.
  
    <img width="800" src="https://user-images.githubusercontent.com/116015331/231960522-98a8e786-608b-4b11-8133-60ca3c2acd80.png">
@@ -76,7 +78,7 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 6. Email Generation-  The email is generateed once the prediction happens from the image uploaded by the user. The email consists of an attachment of the medical report generated.
 
-   <img width="800" src="https://user-images.githubusercontent.com/116015331/231775415-7aa85284-f43c-47f5-b2de-0469f87d56b5.png">
+   <img width="800" src="https://user-images.githubusercontent.com/116015331/232230701-062b0d6b-8f6c-4cfb-8d52-2b3b540acf47.png">
 
 7. Google Cloud Storage- The generated report after prediction is also stored in the Google Cloud Platform for future refernces and documentation purposes. 
 
