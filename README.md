@@ -40,6 +40,8 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 - **Flask**:- It is a lightweight, open source web application framework for Python that we have used to deploy the deep learning model to the website.
 
+   <img width="500" src="https://user-images.githubusercontent.com/116015331/232230926-2f94bba3-8974-46b4-a1a0-462bbd091a12.jpg">
+
 ### Backend :
 
 - **Google Cloud**:- We have made use of the Google Cloud's flexible data storage system in order to store the generated diagnosis reports as it offers safe and secure storage systems with easy file retrieval mechanism.
@@ -50,7 +52,9 @@ It is also uploaded in our Google Cloud, which can be used by the patient for fu
 
 - **KerasAPI**:- Keras is a high level neural network library. We have used it to train our deep learning model using the VGG19 Algorithm.
 
-- **VGG19**:- VGG19 is a deep convolutional neural network model used for image classification tasks. It consists of 19 layers, including 16 convolutional layers, 3 fully connected layers, and a final softmax classifier layer. Our project uses over 6000 brain scan images to train the model.
+- **VGG19**:- VGG19 is a deep convolutional neural network algorithm used for image classification tasks. It consists of 19 layers, including 16 convolutional layers, 3 fully connected layers, and a final softmax classifier layer. Our project uses over 6000 brain scan images to train the model.
+
+   <img height="500" width="700" src="https://user-images.githubusercontent.com/116015331/232231105-df8c44c0-ffd0-4997-b6b7-8dc20f1c46c9.jpg">
 
 ## Project Implementation :
 
