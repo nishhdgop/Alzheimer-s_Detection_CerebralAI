@@ -1,4 +1,4 @@
-# CerebralAI : Alzheimer's Disease Detection
+# CerebralAI : Alzheimer's Detection
 
 ## Introduction :
 
